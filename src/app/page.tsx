@@ -1,7 +1,12 @@
+import { RandomFox } from "./components/RandomFox";
+
+const random = (): number => Math.floor(Math.random() * 123) + 1
+
 export default function Home() {
+  const image = `https://randomfox.ca/images/${random()}.jpg`;
   return (
     <main>
-      <h1>XD</h1>
+      <RandomFox image={image} />
     </main>
   )
 }
