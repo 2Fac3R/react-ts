@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Using TypeScript in React with Next.js
+
+This project is part of the "React with TypeScript Course" on Platzi.
+
+## Topics
+- TypeScript Fundamentals
+- Typing components, props, state, DOM, etc...
+- Using non-typed third-party libraries
+- Working with libraries that extend the Window object
+- and more...
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
