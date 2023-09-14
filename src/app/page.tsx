@@ -3,16 +3,12 @@ import { useState } from "react";
 import type { MouseEventHandler } from 'react'
 import { RandomFox } from "./components/RandomFox";
 
+
 const random = (): number => Math.floor(Math.random() * 123) + 1
 const generateId = () => Math.random().toString(36).substr(2, 9)
 
-type ImageItem = {
-  id: string
-  url: string
-}
-
 export default function Home() {
-  const [images, setImages] = useState<Array<ImageItem>>([]);
+  const [images, setImages] = useState<Array<TImageItem>>([]);
 
   const addNewFox: MouseEventHandler<HTMLButtonElement> = () => {
     const id = generateId();
