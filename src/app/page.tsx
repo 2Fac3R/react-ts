@@ -1,10 +1,11 @@
 "use client"
 import { useState } from "react";
 import type { MouseEventHandler } from 'react'
+import { random } from "lodash"
 import { RandomFox } from "./components/RandomFox";
 
 
-const random = (): number => Math.floor(Math.random() * 123) + 1
+const randomNum = (): number => random(1, 123)
 const generateId = () => Math.random().toString(36).substr(2, 9)
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
   const addNewFox: MouseEventHandler<HTMLButtonElement> = () => {
     const id = generateId();
-    const url = `https://randomfox.ca/images/${random()}.jpg`;
+    const url = `https://randomfox.ca/images/${randomNum()}.jpg`;
     setImages([...images, { id, url }]);
   };
 
